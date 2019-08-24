@@ -37,4 +37,4 @@ int main()
 	int arr[9][9] = { 0 };
 	fun(arr, 9, 9);
 	show(arr, 9, 9);
-}
+}1
