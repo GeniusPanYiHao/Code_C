@@ -42,7 +42,6 @@ int fib(int n)
 {
 	int a = 1;
 	int b = 1;
-
 	if (n <= 2)
 		return 1;
 	else
