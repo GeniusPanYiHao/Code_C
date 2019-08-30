@@ -2,9 +2,5 @@
 #include<stdio.h>
 int main()
 {
-	extern int iExtern;
-	printf("%d", iExtern);
-	return 0;
+	char iExtern = 100;
 }
-
-

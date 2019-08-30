@@ -2,9 +2,7 @@
 #include<stdio.h>
 int main()
 {
-	extern int iExtern;
-	printf("%d", iExtern);
+	extern char iExtern;
+	printf("%c", iExtern);
 	return 0;
 }
-
-
