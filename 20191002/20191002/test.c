@@ -34,40 +34,55 @@
 //1 2 1
 //1 3 3 1
 //1 4 6 4 1
-#define _CRT_SECURE_NO_WARNINGS 1
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//void YangH(int arr[][6],int rol,int col)
+//{
+//	int i;
+//	int j;
+//	for (i = 0; i <= rol; i++)
+//	{
+//		for (j = 0; j <= i; j++)
+//		{
+//			if (j == 0 || i == j)
+//				arr[i][j] = 1;
+//			else
+//				arr[i][j] = arr[i - 1][j] + arr[i - 1][j - 1];
+//		}
+//	}
+//}
+//void show(int arr[][6], int rol, int col)
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i <= rol; i++)
+//	{
+//		for (j = 0; j <= i; j++)
+//		{
+//			printf("%3d", arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
+//int main()
+//{
+//	int arr[6][6];
+//	YangH(arr,6,6);
+//	show(arr, 6, 6);
+//	return 0;
+//}
+//一组数据中只有一个数字出现了一次。
+//其他所有数字都是成对出现的。
+//请找出这个数字。（使用位运算）
 #include<stdio.h>
-void YangH(int arr[][6],int rol,int col)
-{
-	int i;
-	int j;
-	for (i = 0; i <= rol; i++)
-	{
-		for (j = 0; j <= i; j++)
-		{
-			if (j == 0 || i == j)
-				arr[i][j] = 1;
-			else
-				arr[i][j] = arr[i - 1][j] + arr[i - 1][j - 1];
-		}
-	}
-}
-void show(int arr[][6], int rol, int col)
-{
-	int i = 0;
-	int j = 0;
-	for (i = 0; i <= rol; i++)
-	{
-		for (j = 0; j <= i; j++)
-		{
-			printf("%3d", arr[i][j]);
-		}
-		printf("\n");
-	}
-}
 int main()
 {
-	int arr[6][6];
-	YangH(arr,6,6);
-	show(arr, 6, 6);
-	return 0;
+	int arr[6] = { 1, 2, 3, 2, 1 };
+	int n = 0;
+	int i = 0;
+	for (i = 0; i <6; i++)
+	{
+		n = n^arr[i];
+	}
+	printf("%d", n);
 }
