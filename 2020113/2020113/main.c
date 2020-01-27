@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+//:—°‘Ò≈≈–Ú∑®
 //#include<stdio.h>
 //int main()
 //{
@@ -71,32 +72,61 @@
 
 
 
+//:√∞≈›≈≈–Ú∑®
+
+//#include<stdio.h>
+//int main()
+//{
+//	int i, j;
+//	int min;
+//	int b, c;
+//	int a[] = { 1, 0, 3, 2, 5, 6, 4, 8, 9, 7 };
+//	for (i = 0; i <= 9; i++)
+//	{
+//		for (j = 9; j >= 0; j--)
+//		{
+//			if (a[j] < a[j - 1])
+//			{
+//				min = a[j-1];
+//				a[j-1] = a[j];
+//				a[j] = min;
+//			}
+//		}
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d\n", a[i]);
+//	}
+//}
+
+//:Ωªªª≈≈–Ú∑®
+//#include<stdio.h>
+//int main()
+//{
+//	int i, j;
+//	int min, b;
+//	int a[] = { 1, 5, 9, 8, 7, 6, 4, 2, 3, 0 };
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = i + 1; j < 10; j++)
+//		{
+//			if (a[j] < a[i])
+//			{
+//				min = a[j];
+//				a[j] = a[i];
+//				a[i] = min;
+//			}
+//		}
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//	printf("%d\n", a[i]);
+//	}
+//}
 
 
-#include<stdio.h>
-int main()
-{
-	int i, j;
-	int min;
-	int b, c;
-	int a[] = { 1, 0, 3, 2, 5, 6, 4, 8, 9, 7 };
-	for (i = 0; i <= 9; i++)
-	{
-		for (j = 9; j >= 0; j--)
-		{
-			if (a[j] < a[j - 1])
-			{
-				min = a[j-1];
-				a[j-1] = a[j];
-				a[j] = min;
-			}
-		}
-	}
-	for (i = 0; i < 10; i++)
-	{
-		printf("%d\n", a[i]);
-	}
-}
+
+
 
 
 
