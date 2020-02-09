@@ -1,0 +1,29 @@
+﻿生成启动时间为 2019/11/6 21:26:50。
+     1>项目“D:\Summer\201911060\201911060\201911060.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Download\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\summer\201911060\201911060\main.cpp(31): error C2664: “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::get(std::basic_streambuf<char,std::char_traits<char>> &,_Elem)”: 无法将参数 1 从“char *[20]”转换为“char *”
+                 with
+                 [
+                     _Elem=char
+                 ]
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>d:\summer\201911060\201911060\main.cpp(32): error C2664: “size_t strlen(const char *)”: 无法将参数 1 从“char *[20]”转换为“const char *”
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>d:\summer\201911060\201911060\main.cpp(34): error C2664: “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::get(std::basic_streambuf<char,std::char_traits<char>> &,_Elem)”: 无法将参数 1 从“char *[20]”转换为“char *”
+                 with
+                 [
+                     _Elem=char
+                 ]
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>d:\summer\201911060\201911060\main.cpp(35): error C2144: 语法错误:“int”的前面应有“;”
+     1>d:\summer\201911060\201911060\main.cpp(35): error C2664: “size_t strlen(const char *)”: 无法将参数 1 从“char *[20]”转换为“const char *”
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>d:\summer\201911060\201911060\main.cpp(36): error C2664: “void Delete(char *,char *,int,int)”: 无法将参数 1 从“char *[20]”转换为“char *”
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>已完成生成项目“D:\Summer\201911060\201911060\201911060.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.75
