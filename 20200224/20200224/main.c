@@ -5,7 +5,7 @@ typedef struct Node{
 	int elem;
 	struct Node* next;
 }LNode;
-void insert(LNode **head, int x)
+void insert(LNode **head, int x)//：尾插法建立单链表
 {
 	LNode *temp = (LNode*)malloc(sizeof(LNode));
 	temp->next = NULL;
@@ -36,21 +36,23 @@ void delete(LNode **head, int pos)//：删除第pos个元素
 	p->next= p->next->next;
 	free(p->next);
 }
-int main() {
-	LNode *head;
-	int n;
-	scanf("%d", &n);
-
-	for (int i = 0; i < n; i++) {
-		int a;
-		scanf("%d", &a);
-		insert(1,2);
+void print(LNode *head)
+{
+	LNode *p = head->next;
+	while (head != NULL)
+	{
+		printf("%d", p->elem);
+		p = p->next;
 	}
-	delete(1, 2);
-	LNode *t = head;
-	while (t != NULL) {
-		printf("%d ", t->elem);
-		t = t->next;
-	}
-	return 0;
+}
+void test()
+{
+	LNode* head;
+	insert(&head, 1);
+	delete(&head, 1);
+	print(&head);
+}
+int main() 
+{
+	test();
 }
