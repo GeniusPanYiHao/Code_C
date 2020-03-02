@@ -32,6 +32,27 @@ int StackPop(Stack *s, ElemType *E)
 		--s->top;
 	return 1;
 }
+int minStackGetMin(Stack* obj) {
+	int E;
+	E = obj->data[obj->top];
+	obj->top--;
+	while (obj->top != -1)
+	{
+		if (E>obj->data[obj->top])
+		{
+			E = obj->data[obj->top];
+			obj->top--;
+		}
+		else if (E<obj->data[obj->top])
+			obj->top--;
+		else
+		{
+			obj->top--;
+		}
+		printf("%d", E);
+	}
+}
+
 void StackClear(Stack *s)
 {
 	s->top = -1;
@@ -50,10 +71,11 @@ int main()
 	Stack s = { { 1, 2, 3, 4, 5 }, 4 };
 	StackPop(&s, &n);
 	printf("出栈的元素为：%d\n", n);
-	StackClear(&s);//:清空栈
+	//StackClear(&s);//:清空栈
 	StackPush(&s, 7);
-	StackPush(&s, 6);
-	StackPush(&s, 5);
+	/*StackPush(&s, 6);
+	StackPush(&s, 5);*/
+	/*minStackGetMin(&s);*/
 	show(&s);
 }
 
