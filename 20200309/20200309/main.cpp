@@ -4,25 +4,42 @@ using namespace std;
 class Clock
 {
 public:
-	void SetTime(int newH = 0, int newM = 0, int newS = 0);
+	Clock(int newH = 1, int newM = 2, int newS = 3)
+	{
+		hour = newH;
+		minute = newM;
+		second = newS;
+		cout << hour << ":" << minute << ":" << second;
+	}
+	Clock(const Clock &d);
 	void ShowTime();
 private:
 	int hour, minute, second;
 };
-void Clock::SetTime(int newH, int newM, int newS)
+//Clock(const Clock &SetTime);
+Clock::Clock(const Clock &S)
 {
-	hour = newH;
-	minute = newM;
-	second = newS;
+	hour = S.hour;
+	minute =S.minute;
+	second =S.second;
+	cout << hour << ":" << minute << ":" << second;
 }
+//void Clock::SetTime(int newH, int newM, int newS)
+//{
+//	hour = newH;
+//	minute = newM;
+//	second = newS;
+//}
 void Clock::ShowTime()
 {
 	cout<< hour << ":" << minute << ":" << second;
 }
 int main()
 {
-	Clock myclock;
+	/*Clock myclock;
 	myclock.SetTime(8,30,30);
-	myclock.ShowTime();
+	myclock.ShowTime();*/
+	Clock d1;
+	Clock d2(d1);
 	return 0;
 }
