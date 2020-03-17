@@ -28,8 +28,9 @@ void clock::showtime()const
 {
 	cout << hour << ":" << minute << ":" << second << endl;
 }
-clock & clock:: operator ++()
+clock & clock:: operator ++()//:«∞÷√++
 {
+	second++;
 	if (second >= 60)
 	{
 		second -= 60;
@@ -42,7 +43,7 @@ clock & clock:: operator ++()
 	}
 	return *this;
 }
-clock clock::operator ++(int)
+clock clock::operator ++(int)//:∫Û÷√++£ª
 {
 	clock old = *this;
 	++(*this);
