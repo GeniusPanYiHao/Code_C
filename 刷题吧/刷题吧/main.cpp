@@ -37,7 +37,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<iostream>
 using namespace std;
-int fun(int a)
+long long fun(long a)
 {
 	int i;
 	for (i = 2; i < a; i++)
@@ -47,11 +47,11 @@ int fun(int a)
 	}
 	return 1;
 }
-int fun1(int n)
+long long fun1(long long n)
 {
-	int m = 1;
+	long long m = 1;
 	int count = 0;
-	while (n--)
+	while (m<n)
 	{
 		m++;
 		if (fun(m)&&n%m==0)
