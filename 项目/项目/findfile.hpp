@@ -39,7 +39,7 @@ void deletefile(const char* filename)
 	}
 	else
 	{
-		perror("delete file failed");
+		perror("Delete File failed");
 	}
 
 }
