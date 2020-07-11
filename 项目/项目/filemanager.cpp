@@ -16,7 +16,7 @@ void FileManager::getmd5toFiles()
 	for (const auto &f : _files)
 	{
 		_md5.reset();
-		_md5toFiles.insert(make_pair(_md5.getFileMD5(f), f));
+		_md5toFiles.insert(make_pair(_md5.getfileMd5(f), f));
 	}
 
 }

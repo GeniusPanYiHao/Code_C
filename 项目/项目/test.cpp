@@ -29,7 +29,7 @@ void testsearch()
 	string path;
 	cout << "ÊäÈë²éÕÒÄ¿Â¼" << endl;
 	getline(cin, path);
-	vector<string>subfiles;
+	vector<string> subfiles;
 	searchDir(path, subfiles);
 	for (const auto& f : subfiles)
 	{
