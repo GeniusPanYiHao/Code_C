@@ -10,7 +10,7 @@ int divided(int x, int y)
 int main()
 {
 	try{
-		cout << "5/2=" << divided(5, 2) << endl;
+		cout << "5/0=" << divided(5, 0) << endl;
 		cout << "8/0=" << divided(8, 0) << endl;
 		cout << "6/2=" << divided(6, 2) << endl;
 	}
