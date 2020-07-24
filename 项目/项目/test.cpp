@@ -19,7 +19,7 @@ void testfileMd5()
 {
 	Md5 md5;
 	const char* filePath = "test1.txt";
-	const char* filePath1 = "test1.txt";
+	const char* filePath1 = "test2.txt";
 	cout << md5.getfileMd5(filePath) << endl;
 	md5.reset();
 	cout << md5.getfileMd5(filePath1) << endl;
@@ -29,7 +29,7 @@ void testsearch()
 	string path;
 	cout << "ÊäÈë²éÕÒÄ¿Â¼" << endl;
 	getline(cin, path);
-	vector<string> subfiles;
+	unordered_set<string> subfiles;
 	searchDir(path, subfiles);
 	for (const auto& f : subfiles)
 	{

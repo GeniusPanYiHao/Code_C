@@ -25,7 +25,7 @@ private:
 	unordered_set<string> _files;
 	//:映射
 	//:md5映射文件,md5值可能相同，所以用multimap.
-	unordered_multimap<string, string>_md5toFiles;
+	unordered_multimap<string,string>_md5toFiles;
 	//：文件映射MD5
 	unordered_map<string, string>_filestoMd5;
 	Md5 _md5;

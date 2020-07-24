@@ -5,7 +5,7 @@ using namespace std;
 void FileManager::scannerDir(const string& path)
 {
 	//:清理容器
-	_files.clear;
+	_files.clear();
 	searchDir(path, _files);//:保存当前目录下的所有文件
 	getmd5toFiles();
 	getCopyList();
@@ -13,10 +13,10 @@ void FileManager::scannerDir(const string& path)
 void FileManager::getmd5toFiles()
 {
 	_md5toFiles.clear();
-	for (const auto &f : _files)
+	for (const auto& f : _files)
 	{
 		_md5.reset();
-		_md5toFiles.insert(make_pair(_md5.getfileMd5(f), f));
+		_md5toFiles.insert(make_pair(_md5.getfileMd5(f.c_str()), f));
 	}
 
 }
@@ -67,7 +67,26 @@ void FileManager::deleteByMatchName(const string &matchname)
 }
 void FileManager::showcopylist()
 {
-
+	int count = 0;
+	auto it = _md5toFiles.begin();
+	int total = _md5toFiles.size();
+	while (it != _md5toFiles.end())
+	{
+		//:md5值相同的显示在一起
+		int idx = 1;
+		auto pairIt = _md5toFiles.equal_range(it->first);
+		auto curIt = pairIt.first;
+		std::cout << "cur MD5:" << it->first << std::endl;
+		while (curIt != pairIt.second)
+		{
+			std::cout << "\t第" << idx << "个文件：";
+			std::cout << curIt->second << std::endl;
+			count++;
+		}
+		it = pairIt.second;
+	}
+	std::cout << "文件总数：" << total << "\t" << count << std::endl;
+	;
 }
 void FileManager::showAllfile()
 {
