@@ -29,10 +29,13 @@
     <ClInclude Include="Md5.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="filemanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="findfile.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="filemanager.h">
+    <ClInclude Include="User.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -81,6 +81,7 @@
     <ClInclude Include="filemanager.h" />
     <ClInclude Include="findfile.hpp" />
     <ClInclude Include="Md5.h" />
+    <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="filemanager.cpp" />

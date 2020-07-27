@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+#pragma once
 #define N 64
 typedef unsigned int elemtype;
 #include<string>
